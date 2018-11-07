@@ -3,29 +3,29 @@ jkit_twi.elf:     file format elf32-avr
 
 Sections:
 Idx Name          Size      VMA       LMA       File off  Algn
-  0 .data         00000000  00800100  00800100  00000124  2**0
+  0 .data         0000000c  00800100  000003e0  00000454  2**0
                   CONTENTS, ALLOC, LOAD, DATA
-  1 .text         000000d0  00000000  00000000  00000054  2**1
+  1 .text         000003e0  00000000  00000000  00000074  2**1
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
-  2 .comment      00000030  00000000  00000000  00000124  2**0
+  2 .comment      00000030  00000000  00000000  00000460  2**0
                   CONTENTS, READONLY
-  3 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  00000154  2**2
+  3 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  00000490  2**2
                   CONTENTS, READONLY
-  4 .debug_aranges 00000020  00000000  00000000  00000190  2**0
+  4 .debug_aranges 00000040  00000000  00000000  000004cc  2**0
                   CONTENTS, READONLY, DEBUGGING
-  5 .debug_info   000008cc  00000000  00000000  000001b0  2**0
+  5 .debug_info   00000a73  00000000  00000000  0000050c  2**0
                   CONTENTS, READONLY, DEBUGGING
-  6 .debug_abbrev 0000080c  00000000  00000000  00000a7c  2**0
+  6 .debug_abbrev 00000901  00000000  00000000  00000f7f  2**0
                   CONTENTS, READONLY, DEBUGGING
-  7 .debug_line   00000295  00000000  00000000  00001288  2**0
+  7 .debug_line   000004ed  00000000  00000000  00001880  2**0
                   CONTENTS, READONLY, DEBUGGING
-  8 .debug_frame  00000024  00000000  00000000  00001520  2**2
+  8 .debug_frame  00000080  00000000  00000000  00001d70  2**2
                   CONTENTS, READONLY, DEBUGGING
-  9 .debug_str    00000423  00000000  00000000  00001544  2**0
+  9 .debug_str    00000524  00000000  00000000  00001df0  2**0
                   CONTENTS, READONLY, DEBUGGING
- 10 .debug_loc    00000048  00000000  00000000  00001967  2**0
+ 10 .debug_loc    00000246  00000000  00000000  00002314  2**0
                   CONTENTS, READONLY, DEBUGGING
- 11 .debug_ranges 00000010  00000000  00000000  000019af  2**0
+ 11 .debug_ranges 00000030  00000000  00000000  0000255a  2**0
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -33,73 +33,73 @@ Disassembly of section .text:
 00000000 <__vectors>:
    0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
    2:	00 00       	nop
-   4:	4b c0       	rjmp	.+150    	; 0x9c <__bad_interrupt>
+   4:	58 c0       	rjmp	.+176    	; 0xb6 <__bad_interrupt>
    6:	00 00       	nop
-   8:	49 c0       	rjmp	.+146    	; 0x9c <__bad_interrupt>
+   8:	56 c0       	rjmp	.+172    	; 0xb6 <__bad_interrupt>
    a:	00 00       	nop
-   c:	47 c0       	rjmp	.+142    	; 0x9c <__bad_interrupt>
+   c:	54 c0       	rjmp	.+168    	; 0xb6 <__bad_interrupt>
    e:	00 00       	nop
-  10:	45 c0       	rjmp	.+138    	; 0x9c <__bad_interrupt>
+  10:	52 c0       	rjmp	.+164    	; 0xb6 <__bad_interrupt>
   12:	00 00       	nop
-  14:	43 c0       	rjmp	.+134    	; 0x9c <__bad_interrupt>
+  14:	50 c0       	rjmp	.+160    	; 0xb6 <__bad_interrupt>
   16:	00 00       	nop
-  18:	41 c0       	rjmp	.+130    	; 0x9c <__bad_interrupt>
+  18:	4e c0       	rjmp	.+156    	; 0xb6 <__bad_interrupt>
   1a:	00 00       	nop
-  1c:	3f c0       	rjmp	.+126    	; 0x9c <__bad_interrupt>
+  1c:	4c c0       	rjmp	.+152    	; 0xb6 <__bad_interrupt>
   1e:	00 00       	nop
-  20:	3d c0       	rjmp	.+122    	; 0x9c <__bad_interrupt>
+  20:	4a c0       	rjmp	.+148    	; 0xb6 <__bad_interrupt>
   22:	00 00       	nop
-  24:	3b c0       	rjmp	.+118    	; 0x9c <__bad_interrupt>
+  24:	48 c0       	rjmp	.+144    	; 0xb6 <__bad_interrupt>
   26:	00 00       	nop
-  28:	39 c0       	rjmp	.+114    	; 0x9c <__bad_interrupt>
+  28:	46 c0       	rjmp	.+140    	; 0xb6 <__bad_interrupt>
   2a:	00 00       	nop
-  2c:	37 c0       	rjmp	.+110    	; 0x9c <__bad_interrupt>
+  2c:	44 c0       	rjmp	.+136    	; 0xb6 <__bad_interrupt>
   2e:	00 00       	nop
-  30:	35 c0       	rjmp	.+106    	; 0x9c <__bad_interrupt>
+  30:	42 c0       	rjmp	.+132    	; 0xb6 <__bad_interrupt>
   32:	00 00       	nop
-  34:	33 c0       	rjmp	.+102    	; 0x9c <__bad_interrupt>
+  34:	40 c0       	rjmp	.+128    	; 0xb6 <__bad_interrupt>
   36:	00 00       	nop
-  38:	31 c0       	rjmp	.+98     	; 0x9c <__bad_interrupt>
+  38:	3e c0       	rjmp	.+124    	; 0xb6 <__bad_interrupt>
   3a:	00 00       	nop
-  3c:	2f c0       	rjmp	.+94     	; 0x9c <__bad_interrupt>
+  3c:	3c c0       	rjmp	.+120    	; 0xb6 <__bad_interrupt>
   3e:	00 00       	nop
-  40:	2d c0       	rjmp	.+90     	; 0x9c <__bad_interrupt>
+  40:	3a c0       	rjmp	.+116    	; 0xb6 <__bad_interrupt>
   42:	00 00       	nop
-  44:	2b c0       	rjmp	.+86     	; 0x9c <__bad_interrupt>
+  44:	38 c0       	rjmp	.+112    	; 0xb6 <__bad_interrupt>
   46:	00 00       	nop
-  48:	29 c0       	rjmp	.+82     	; 0x9c <__bad_interrupt>
+  48:	36 c0       	rjmp	.+108    	; 0xb6 <__bad_interrupt>
   4a:	00 00       	nop
-  4c:	27 c0       	rjmp	.+78     	; 0x9c <__bad_interrupt>
+  4c:	34 c0       	rjmp	.+104    	; 0xb6 <__bad_interrupt>
   4e:	00 00       	nop
-  50:	25 c0       	rjmp	.+74     	; 0x9c <__bad_interrupt>
+  50:	32 c0       	rjmp	.+100    	; 0xb6 <__bad_interrupt>
   52:	00 00       	nop
-  54:	23 c0       	rjmp	.+70     	; 0x9c <__bad_interrupt>
+  54:	30 c0       	rjmp	.+96     	; 0xb6 <__bad_interrupt>
   56:	00 00       	nop
-  58:	21 c0       	rjmp	.+66     	; 0x9c <__bad_interrupt>
+  58:	2e c0       	rjmp	.+92     	; 0xb6 <__bad_interrupt>
   5a:	00 00       	nop
-  5c:	1f c0       	rjmp	.+62     	; 0x9c <__bad_interrupt>
+  5c:	2c c0       	rjmp	.+88     	; 0xb6 <__bad_interrupt>
   5e:	00 00       	nop
-  60:	1d c0       	rjmp	.+58     	; 0x9c <__bad_interrupt>
+  60:	2a c0       	rjmp	.+84     	; 0xb6 <__bad_interrupt>
   62:	00 00       	nop
-  64:	1b c0       	rjmp	.+54     	; 0x9c <__bad_interrupt>
+  64:	28 c0       	rjmp	.+80     	; 0xb6 <__bad_interrupt>
   66:	00 00       	nop
-  68:	19 c0       	rjmp	.+50     	; 0x9c <__bad_interrupt>
+  68:	26 c0       	rjmp	.+76     	; 0xb6 <__bad_interrupt>
   6a:	00 00       	nop
-  6c:	17 c0       	rjmp	.+46     	; 0x9c <__bad_interrupt>
+  6c:	24 c0       	rjmp	.+72     	; 0xb6 <__bad_interrupt>
   6e:	00 00       	nop
-  70:	15 c0       	rjmp	.+42     	; 0x9c <__bad_interrupt>
+  70:	22 c0       	rjmp	.+68     	; 0xb6 <__bad_interrupt>
   72:	00 00       	nop
-  74:	13 c0       	rjmp	.+38     	; 0x9c <__bad_interrupt>
+  74:	20 c0       	rjmp	.+64     	; 0xb6 <__bad_interrupt>
   76:	00 00       	nop
-  78:	11 c0       	rjmp	.+34     	; 0x9c <__bad_interrupt>
+  78:	1e c0       	rjmp	.+60     	; 0xb6 <__bad_interrupt>
   7a:	00 00       	nop
-  7c:	0f c0       	rjmp	.+30     	; 0x9c <__bad_interrupt>
+  7c:	1c c0       	rjmp	.+56     	; 0xb6 <__bad_interrupt>
   7e:	00 00       	nop
-  80:	0d c0       	rjmp	.+26     	; 0x9c <__bad_interrupt>
+  80:	1a c0       	rjmp	.+52     	; 0xb6 <__bad_interrupt>
   82:	00 00       	nop
-  84:	0b c0       	rjmp	.+22     	; 0x9c <__bad_interrupt>
+  84:	18 c0       	rjmp	.+48     	; 0xb6 <__bad_interrupt>
   86:	00 00       	nop
-  88:	09 c0       	rjmp	.+18     	; 0x9c <__bad_interrupt>
+  88:	16 c0       	rjmp	.+44     	; 0xb6 <__bad_interrupt>
 	...
 
 0000008c <__ctors_end>:
@@ -109,56 +109,561 @@ Disassembly of section .text:
   92:	d0 e1       	ldi	r29, 0x10	; 16
   94:	de bf       	out	0x3e, r29	; 62
   96:	cd bf       	out	0x3d, r28	; 61
-  98:	02 d0       	rcall	.+4      	; 0x9e <main>
-  9a:	18 c0       	rjmp	.+48     	; 0xcc <_exit>
 
-0000009c <__bad_interrupt>:
-  9c:	b1 cf       	rjmp	.-158    	; 0x0 <__vectors>
+00000098 <__do_copy_data>:
+  98:	11 e0       	ldi	r17, 0x01	; 1
+  9a:	a0 e0       	ldi	r26, 0x00	; 0
+  9c:	b1 e0       	ldi	r27, 0x01	; 1
+  9e:	e0 ee       	ldi	r30, 0xE0	; 224
+  a0:	f3 e0       	ldi	r31, 0x03	; 3
+  a2:	00 e0       	ldi	r16, 0x00	; 0
+  a4:	0b bf       	out	0x3b, r16	; 59
+  a6:	02 c0       	rjmp	.+4      	; 0xac <__do_copy_data+0x14>
+  a8:	07 90       	elpm	r0, Z+
+  aa:	0d 92       	st	X+, r0
+  ac:	ac 30       	cpi	r26, 0x0C	; 12
+  ae:	b1 07       	cpc	r27, r17
+  b0:	d9 f7       	brne	.-10     	; 0xa8 <__do_copy_data+0x10>
+  b2:	57 d1       	rcall	.+686    	; 0x362 <main>
+  b4:	93 c1       	rjmp	.+806    	; 0x3dc <_exit>
 
-0000009e <main>:
-#define F_CPU 16000000UL
-#include <util/delay.h>
+000000b6 <__bad_interrupt>:
+  b6:	a4 cf       	rjmp	.-184    	; 0x0 <__vectors>
 
-int main(void)
+000000b8 <_Z13init_twi_portv>:
+		}
+	}
+}
+void init_twi_port()
 {
-	DDRA = 0xff;
-  9e:	8f ef       	ldi	r24, 0xFF	; 255
-  a0:	8a bb       	out	0x1a, r24	; 26
-    while (1) 
-    {
-		PORTA = 0xff;
-  a2:	8b bb       	out	0x1b, r24	; 27
+	DDRC = 0xff; DDRG = 0xff;	// FND 출력 세팅
+  b8:	8f ef       	ldi	r24, 0xFF	; 255
+  ba:	84 bb       	out	0x14, r24	; 20
+  bc:	80 93 64 00 	sts	0x0064, r24	; 0x800064 <__TEXT_REGION_LENGTH__+0x7e0064>
+	DDRD = 0x00;; PORTD = 3;	// For Internal pull-up for SCL & SCK
+  c0:	11 ba       	out	0x11, r1	; 17
+  c2:	83 e0       	ldi	r24, 0x03	; 3
+  c4:	82 bb       	out	0x12, r24	; 18
+	SFIOR &= ~(1<<PUD); 	// PUD = 0 : Pull Up Enable
+  c6:	80 b5       	in	r24, 0x20	; 32
+  c8:	8b 7f       	andi	r24, 0xFB	; 251
+  ca:	80 bd       	out	0x20, r24	; 32
+	TWBR = (F_CPU/F_SCK - 16) / 2;	// 공식 참조, bit trans rate 설정
+  cc:	80 ec       	ldi	r24, 0xC0	; 192
+  ce:	80 93 70 00 	sts	0x0070, r24	; 0x800070 <__TEXT_REGION_LENGTH__+0x7e0070>
+	TWSR = TWSR & 0xfc;		// Prescaler 값 = 00 (1배)
+  d2:	e1 e7       	ldi	r30, 0x71	; 113
+  d4:	f0 e0       	ldi	r31, 0x00	; 0
+  d6:	80 81       	ld	r24, Z
+  d8:	8c 7f       	andi	r24, 0xFC	; 252
+  da:	80 83       	st	Z, r24
+  dc:	08 95       	ret
+
+000000de <_Z24write_twi_1byte_nopresetcc>:
+}
+void write_twi_1byte_nopreset(char reg, char data)
+{
+	TWCR = (1 << TWINT) | (1<<TWSTA) | (1<<TWEN);// START 전송
+  de:	94 ea       	ldi	r25, 0xA4	; 164
+  e0:	90 93 74 00 	sts	0x0074, r25	; 0x800074 <__TEXT_REGION_LENGTH__+0x7e0074>
+	while (((TWCR & (1 << TWINT)) == 0x00) || (TWSR & 0xf8) != 0x08) ;		// START 상태 검사, 이후 모두 상태 검사
+  e4:	e4 e7       	ldi	r30, 0x74	; 116
+  e6:	f0 e0       	ldi	r31, 0x00	; 0
+  e8:	a1 e7       	ldi	r26, 0x71	; 113
+  ea:	b0 e0       	ldi	r27, 0x00	; 0
+  ec:	90 81       	ld	r25, Z
+  ee:	99 23       	and	r25, r25
+  f0:	ec f7       	brge	.-6      	; 0xec <_Z24write_twi_1byte_nopresetcc+0xe>
+  f2:	9c 91       	ld	r25, X
+  f4:	98 7f       	andi	r25, 0xF8	; 248
+  f6:	98 30       	cpi	r25, 0x08	; 8
+  f8:	c9 f7       	brne	.-14     	; 0xec <_Z24write_twi_1byte_nopresetcc+0xe>
+	TWDR = ATS75_ADDR | 0;			// SLA+W 준비, W=0
+  fa:	98 e9       	ldi	r25, 0x98	; 152
+  fc:	90 93 73 00 	sts	0x0073, r25	; 0x800073 <__TEXT_REGION_LENGTH__+0x7e0073>
+	TWCR = (1 << TWINT) | (1 << TWEN);		// SLA+W 전송
+ 100:	94 e8       	ldi	r25, 0x84	; 132
+ 102:	90 93 74 00 	sts	0x0074, r25	; 0x800074 <__TEXT_REGION_LENGTH__+0x7e0074>
+	while (((TWCR & (1 << TWINT)) == 0x00) || (TWSR & 0xf8) != 0x18) ;
+ 106:	e4 e7       	ldi	r30, 0x74	; 116
+ 108:	f0 e0       	ldi	r31, 0x00	; 0
+ 10a:	a1 e7       	ldi	r26, 0x71	; 113
+ 10c:	b0 e0       	ldi	r27, 0x00	; 0
+ 10e:	90 81       	ld	r25, Z
+ 110:	99 23       	and	r25, r25
+ 112:	ec f7       	brge	.-6      	; 0x10e <_Z24write_twi_1byte_nopresetcc+0x30>
+ 114:	9c 91       	ld	r25, X
+ 116:	98 7f       	andi	r25, 0xF8	; 248
+ 118:	98 31       	cpi	r25, 0x18	; 24
+ 11a:	c9 f7       	brne	.-14     	; 0x10e <_Z24write_twi_1byte_nopresetcc+0x30>
+	TWDR = reg;				// aTS75 Reg 값 준비
+ 11c:	80 93 73 00 	sts	0x0073, r24	; 0x800073 <__TEXT_REGION_LENGTH__+0x7e0073>
+	TWCR = (1 << TWINT) | (1 << TWEN);		// aTS75 Reg 값 전송
+ 120:	84 e8       	ldi	r24, 0x84	; 132
+ 122:	80 93 74 00 	sts	0x0074, r24	; 0x800074 <__TEXT_REGION_LENGTH__+0x7e0074>
+	while (((TWCR & (1 << TWINT)) == 0x00) || (TWSR & 0xf8) != 0x28) ;
+ 126:	e4 e7       	ldi	r30, 0x74	; 116
+ 128:	f0 e0       	ldi	r31, 0x00	; 0
+ 12a:	a1 e7       	ldi	r26, 0x71	; 113
+ 12c:	b0 e0       	ldi	r27, 0x00	; 0
+ 12e:	80 81       	ld	r24, Z
+ 130:	88 23       	and	r24, r24
+ 132:	ec f7       	brge	.-6      	; 0x12e <_Z24write_twi_1byte_nopresetcc+0x50>
+ 134:	8c 91       	ld	r24, X
+ 136:	88 7f       	andi	r24, 0xF8	; 248
+ 138:	88 32       	cpi	r24, 0x28	; 40
+ 13a:	c9 f7       	brne	.-14     	; 0x12e <_Z24write_twi_1byte_nopresetcc+0x50>
+	TWDR = data;				// DATA 준비
+ 13c:	60 93 73 00 	sts	0x0073, r22	; 0x800073 <__TEXT_REGION_LENGTH__+0x7e0073>
+	TWCR = (1 << TWINT) | (1 << TWEN);		// DATA 전송
+ 140:	84 e8       	ldi	r24, 0x84	; 132
+ 142:	80 93 74 00 	sts	0x0074, r24	; 0x800074 <__TEXT_REGION_LENGTH__+0x7e0074>
+	while (((TWCR & (1 << TWINT)) == 0x00) || (TWSR & 0xf8) != 0x28) ;
+ 146:	e4 e7       	ldi	r30, 0x74	; 116
+ 148:	f0 e0       	ldi	r31, 0x00	; 0
+ 14a:	a1 e7       	ldi	r26, 0x71	; 113
+ 14c:	b0 e0       	ldi	r27, 0x00	; 0
+ 14e:	80 81       	ld	r24, Z
+ 150:	88 23       	and	r24, r24
+ 152:	ec f7       	brge	.-6      	; 0x14e <_Z24write_twi_1byte_nopresetcc+0x70>
+ 154:	8c 91       	ld	r24, X
+ 156:	88 7f       	andi	r24, 0xF8	; 248
+ 158:	88 32       	cpi	r24, 0x28	; 40
+ 15a:	c9 f7       	brne	.-14     	; 0x14e <_Z24write_twi_1byte_nopresetcc+0x70>
+	TWCR = (1 << TWINT) | (1 << TWSTO) | (1 << TWEN);	// STOP 전송
+ 15c:	84 e9       	ldi	r24, 0x94	; 148
+ 15e:	80 93 74 00 	sts	0x0074, r24	; 0x800074 <__TEXT_REGION_LENGTH__+0x7e0074>
+	while ((TWCR & (1 << TWSTO))) ;		// STOP 확인
+ 162:	e4 e7       	ldi	r30, 0x74	; 116
+ 164:	f0 e0       	ldi	r31, 0x00	; 0
+ 166:	80 81       	ld	r24, Z
+ 168:	84 fd       	sbrc	r24, 4
+ 16a:	fd cf       	rjmp	.-6      	; 0x166 <_Z24write_twi_1byte_nopresetcc+0x88>
+}
+ 16c:	08 95       	ret
+
+0000016e <_Z23read_twi_2byte_nopresetc>:
+int read_twi_2byte_nopreset(char reg)
+{
+	char high_byte, low_byte;
+	TWCR = (1 << TWINT) | (1<<TWSTA) | (1<<TWEN);// START 전송
+ 16e:	94 ea       	ldi	r25, 0xA4	; 164
+ 170:	90 93 74 00 	sts	0x0074, r25	; 0x800074 <__TEXT_REGION_LENGTH__+0x7e0074>
+	while (((TWCR & (1 << TWINT)) == 0x00) || (TWSR & 0xf8) != 0x08) ;		// START 상태 검사, 이후 ACK 및 상태 검사
+ 174:	e4 e7       	ldi	r30, 0x74	; 116
+ 176:	f0 e0       	ldi	r31, 0x00	; 0
+ 178:	a1 e7       	ldi	r26, 0x71	; 113
+ 17a:	b0 e0       	ldi	r27, 0x00	; 0
+ 17c:	90 81       	ld	r25, Z
+ 17e:	99 23       	and	r25, r25
+ 180:	ec f7       	brge	.-6      	; 0x17c <_Z23read_twi_2byte_nopresetc+0xe>
+ 182:	9c 91       	ld	r25, X
+ 184:	98 7f       	andi	r25, 0xF8	; 248
+ 186:	98 30       	cpi	r25, 0x08	; 8
+ 188:	c9 f7       	brne	.-14     	; 0x17c <_Z23read_twi_2byte_nopresetc+0xe>
+	TWDR = ATS75_ADDR | 0;			// SLA+W 준비, W=0
+ 18a:	98 e9       	ldi	r25, 0x98	; 152
+ 18c:	90 93 73 00 	sts	0x0073, r25	; 0x800073 <__TEXT_REGION_LENGTH__+0x7e0073>
+	TWCR = (1 << TWINT) | (1 << TWEN);		// SLA+W 전송
+ 190:	94 e8       	ldi	r25, 0x84	; 132
+ 192:	90 93 74 00 	sts	0x0074, r25	; 0x800074 <__TEXT_REGION_LENGTH__+0x7e0074>
+	while (((TWCR & (1 << TWINT)) == 0x00) || (TWSR & 0xf8) != 0x18) ;
+ 196:	e4 e7       	ldi	r30, 0x74	; 116
+ 198:	f0 e0       	ldi	r31, 0x00	; 0
+ 19a:	a1 e7       	ldi	r26, 0x71	; 113
+ 19c:	b0 e0       	ldi	r27, 0x00	; 0
+ 19e:	90 81       	ld	r25, Z
+ 1a0:	99 23       	and	r25, r25
+ 1a2:	ec f7       	brge	.-6      	; 0x19e <_Z23read_twi_2byte_nopresetc+0x30>
+ 1a4:	9c 91       	ld	r25, X
+ 1a6:	98 7f       	andi	r25, 0xF8	; 248
+ 1a8:	98 31       	cpi	r25, 0x18	; 24
+ 1aa:	c9 f7       	brne	.-14     	; 0x19e <_Z23read_twi_2byte_nopresetc+0x30>
+	TWDR = reg;				// aTS75 Reg 값 준비
+ 1ac:	80 93 73 00 	sts	0x0073, r24	; 0x800073 <__TEXT_REGION_LENGTH__+0x7e0073>
+	TWCR = (1 << TWINT) | (1 << TWEN);		// aTS75 Reg 값 전송
+ 1b0:	84 e8       	ldi	r24, 0x84	; 132
+ 1b2:	80 93 74 00 	sts	0x0074, r24	; 0x800074 <__TEXT_REGION_LENGTH__+0x7e0074>
+	while (((TWCR & (1 << TWINT)) == 0x00) || (TWSR & 0xf8) != 0x28) ;
+ 1b6:	e4 e7       	ldi	r30, 0x74	; 116
+ 1b8:	f0 e0       	ldi	r31, 0x00	; 0
+ 1ba:	a1 e7       	ldi	r26, 0x71	; 113
+ 1bc:	b0 e0       	ldi	r27, 0x00	; 0
+ 1be:	80 81       	ld	r24, Z
+ 1c0:	88 23       	and	r24, r24
+ 1c2:	ec f7       	brge	.-6      	; 0x1be <_Z23read_twi_2byte_nopresetc+0x50>
+ 1c4:	8c 91       	ld	r24, X
+ 1c6:	88 7f       	andi	r24, 0xF8	; 248
+ 1c8:	88 32       	cpi	r24, 0x28	; 40
+ 1ca:	c9 f7       	brne	.-14     	; 0x1be <_Z23read_twi_2byte_nopresetc+0x50>
+	TWCR = (1 << TWINT) | (1<<TWSTA) | (1<<TWEN);// RESTART 전송
+ 1cc:	84 ea       	ldi	r24, 0xA4	; 164
+ 1ce:	80 93 74 00 	sts	0x0074, r24	; 0x800074 <__TEXT_REGION_LENGTH__+0x7e0074>
+	while (((TWCR & (1 << TWINT)) == 0x00) || (TWSR & 0xf8) != 0x10) ;		// RESTART 상태 검사, 이후 ACK, NO_ACK 상태 검사
+ 1d2:	e4 e7       	ldi	r30, 0x74	; 116
+ 1d4:	f0 e0       	ldi	r31, 0x00	; 0
+ 1d6:	a1 e7       	ldi	r26, 0x71	; 113
+ 1d8:	b0 e0       	ldi	r27, 0x00	; 0
+ 1da:	80 81       	ld	r24, Z
+ 1dc:	88 23       	and	r24, r24
+ 1de:	ec f7       	brge	.-6      	; 0x1da <_Z23read_twi_2byte_nopresetc+0x6c>
+ 1e0:	8c 91       	ld	r24, X
+ 1e2:	88 7f       	andi	r24, 0xF8	; 248
+ 1e4:	80 31       	cpi	r24, 0x10	; 16
+ 1e6:	c9 f7       	brne	.-14     	; 0x1da <_Z23read_twi_2byte_nopresetc+0x6c>
+	TWDR = ATS75_ADDR | 1;			// SLA+R 준비, R=1
+ 1e8:	89 e9       	ldi	r24, 0x99	; 153
+ 1ea:	80 93 73 00 	sts	0x0073, r24	; 0x800073 <__TEXT_REGION_LENGTH__+0x7e0073>
+	TWCR = (1 << TWINT) | (1 << TWEN);		// SLA+R 전송
+ 1ee:	84 e8       	ldi	r24, 0x84	; 132
+ 1f0:	80 93 74 00 	sts	0x0074, r24	; 0x800074 <__TEXT_REGION_LENGTH__+0x7e0074>
+	while (((TWCR & (1 << TWINT)) == 0x00) || (TWSR & 0xf8) != 0x40) ;
+ 1f4:	e4 e7       	ldi	r30, 0x74	; 116
+ 1f6:	f0 e0       	ldi	r31, 0x00	; 0
+ 1f8:	a1 e7       	ldi	r26, 0x71	; 113
+ 1fa:	b0 e0       	ldi	r27, 0x00	; 0
+ 1fc:	80 81       	ld	r24, Z
+ 1fe:	88 23       	and	r24, r24
+ 200:	ec f7       	brge	.-6      	; 0x1fc <_Z23read_twi_2byte_nopresetc+0x8e>
+ 202:	8c 91       	ld	r24, X
+ 204:	88 7f       	andi	r24, 0xF8	; 248
+ 206:	80 34       	cpi	r24, 0x40	; 64
+ 208:	c9 f7       	brne	.-14     	; 0x1fc <_Z23read_twi_2byte_nopresetc+0x8e>
+	TWCR = (1 << TWINT) | (1 << TWEN | 1 << TWEA);// 1st DATA 준비
+ 20a:	84 ec       	ldi	r24, 0xC4	; 196
+ 20c:	80 93 74 00 	sts	0x0074, r24	; 0x800074 <__TEXT_REGION_LENGTH__+0x7e0074>
+	while(((TWCR & (1 << TWINT)) == 0x00) || (TWSR & 0xf8) != 0x50);
+ 210:	e4 e7       	ldi	r30, 0x74	; 116
+ 212:	f0 e0       	ldi	r31, 0x00	; 0
+ 214:	a1 e7       	ldi	r26, 0x71	; 113
+ 216:	b0 e0       	ldi	r27, 0x00	; 0
+ 218:	80 81       	ld	r24, Z
+ 21a:	88 23       	and	r24, r24
+ 21c:	ec f7       	brge	.-6      	; 0x218 <_Z23read_twi_2byte_nopresetc+0xaa>
+ 21e:	8c 91       	ld	r24, X
+ 220:	88 7f       	andi	r24, 0xF8	; 248
+ 222:	80 35       	cpi	r24, 0x50	; 80
+ 224:	c9 f7       	brne	.-14     	; 0x218 <_Z23read_twi_2byte_nopresetc+0xaa>
+	high_byte = TWDR;				// 1st DATA 수신
+ 226:	20 91 73 00 	lds	r18, 0x0073	; 0x800073 <__TEXT_REGION_LENGTH__+0x7e0073>
+	TWCR = (1 << TWINT) | (1 << TWEN);// 2nd DATA 준비
+ 22a:	84 e8       	ldi	r24, 0x84	; 132
+ 22c:	80 93 74 00 	sts	0x0074, r24	; 0x800074 <__TEXT_REGION_LENGTH__+0x7e0074>
+	while(((TWCR & (1 << TWINT)) == 0x00) || (TWSR & 0xf8) != 0x58);
+ 230:	e4 e7       	ldi	r30, 0x74	; 116
+ 232:	f0 e0       	ldi	r31, 0x00	; 0
+ 234:	a1 e7       	ldi	r26, 0x71	; 113
+ 236:	b0 e0       	ldi	r27, 0x00	; 0
+ 238:	80 81       	ld	r24, Z
+ 23a:	88 23       	and	r24, r24
+ 23c:	ec f7       	brge	.-6      	; 0x238 <_Z23read_twi_2byte_nopresetc+0xca>
+ 23e:	8c 91       	ld	r24, X
+ 240:	88 7f       	andi	r24, 0xF8	; 248
+ 242:	88 35       	cpi	r24, 0x58	; 88
+ 244:	c9 f7       	brne	.-14     	; 0x238 <_Z23read_twi_2byte_nopresetc+0xca>
+	low_byte = TWDR;				// 2nd DATA 수신
+ 246:	80 91 73 00 	lds	r24, 0x0073	; 0x800073 <__TEXT_REGION_LENGTH__+0x7e0073>
+	TWCR = (1 << TWINT) | (1 << TWSTO) | (1 << TWEN);	// STOP 전송
+ 24a:	94 e9       	ldi	r25, 0x94	; 148
+ 24c:	90 93 74 00 	sts	0x0074, r25	; 0x800074 <__TEXT_REGION_LENGTH__+0x7e0074>
+	while ((TWCR & (1 << TWSTO))) ;		 // STOP 확인
+ 250:	e4 e7       	ldi	r30, 0x74	; 116
+ 252:	f0 e0       	ldi	r31, 0x00	; 0
+ 254:	90 81       	ld	r25, Z
+ 256:	94 fd       	sbrc	r25, 4
+ 258:	fd cf       	rjmp	.-6      	; 0x254 <_Z23read_twi_2byte_nopresetc+0xe6>
+	return((high_byte<<8) | low_byte);		// 수신 DATA 리턴
+ 25a:	90 e0       	ldi	r25, 0x00	; 0
+}
+ 25c:	92 2b       	or	r25, r18
+ 25e:	08 95       	ret
+
+00000260 <_Z11display_FNDi>:
+void display_FND(int value)
+{
+ 260:	0f 93       	push	r16
+ 262:	1f 93       	push	r17
+ 264:	cf 93       	push	r28
+ 266:	df 93       	push	r29
+ 268:	cd b7       	in	r28, 0x3d	; 61
+ 26a:	de b7       	in	r29, 0x3e	; 62
+ 26c:	68 97       	sbiw	r28, 0x18	; 24
+ 26e:	0f b6       	in	r0, 0x3f	; 63
+ 270:	f8 94       	cli
+ 272:	de bf       	out	0x3e, r29	; 62
+ 274:	0f be       	out	0x3f, r0	; 63
+ 276:	cd bf       	out	0x3d, r28	; 61
+ 278:	9c 01       	movw	r18, r24
+	char digit[12] = {0x3f, 0x06, 0x5b, 0x4f, 0x66, 0x6d, 0x7c, 0x07, 0x7f, 0x67, 0x00, 0x40};
+ 27a:	8c e0       	ldi	r24, 0x0C	; 12
+ 27c:	e0 e0       	ldi	r30, 0x00	; 0
+ 27e:	f1 e0       	ldi	r31, 0x01	; 1
+ 280:	de 01       	movw	r26, r28
+ 282:	11 96       	adiw	r26, 0x01	; 1
+ 284:	01 90       	ld	r0, Z+
+ 286:	0d 92       	st	X+, r0
+ 288:	8a 95       	dec	r24
+ 28a:	e1 f7       	brne	.-8      	; 0x284 <_Z11display_FNDi+0x24>
+	char fnd_sel[4] = {0x01, 0x02, 0x04, 0x08};
+ 28c:	81 e0       	ldi	r24, 0x01	; 1
+ 28e:	8d 87       	std	Y+13, r24	; 0x0d
+ 290:	82 e0       	ldi	r24, 0x02	; 2
+ 292:	8e 87       	std	Y+14, r24	; 0x0e
+ 294:	84 e0       	ldi	r24, 0x04	; 4
+ 296:	8f 87       	std	Y+15, r24	; 0x0f
+ 298:	88 e0       	ldi	r24, 0x08	; 8
+ 29a:	88 8b       	std	Y+16, r24	; 0x10
+
+	int value_int, value_deci, num[4], i;
+	if((value & 0x8000) != 0x8000)	// Sign 비트 체크
+ 29c:	33 23       	and	r19, r19
+ 29e:	2c f0       	brlt	.+10     	; 0x2aa <_Z11display_FNDi+0x4a>
+	num[3] = 10;		// 양수인 경우는 디스플레이 없음
+ 2a0:	8a e0       	ldi	r24, 0x0A	; 10
+ 2a2:	90 e0       	ldi	r25, 0x00	; 0
+ 2a4:	98 8f       	std	Y+24, r25	; 0x18
+ 2a6:	8f 8b       	std	Y+23, r24	; 0x17
+ 2a8:	07 c0       	rjmp	.+14     	; 0x2b8 <_Z11display_FNDi+0x58>
+	else
+	{
+		num[3] = 11;		// 음수인 경우는 ‘-’ 디스플레이
+ 2aa:	8b e0       	ldi	r24, 0x0B	; 11
+ 2ac:	90 e0       	ldi	r25, 0x00	; 0
+ 2ae:	98 8f       	std	Y+24, r25	; 0x18
+ 2b0:	8f 8b       	std	Y+23, r24	; 0x17
+		value = (~value)+1;		// 2’s Compliment (절대값)
+ 2b2:	31 95       	neg	r19
+ 2b4:	21 95       	neg	r18
+ 2b6:	31 09       	sbc	r19, r1
+	}
+	value_int = (char)((value & 0x7f00) >> 8);
+ 2b8:	c9 01       	movw	r24, r18
+ 2ba:	88 27       	eor	r24, r24
+ 2bc:	9f 77       	andi	r25, 0x7F	; 127
+ 2be:	89 2f       	mov	r24, r25
+	value_deci = (char)(value & 0x00ff);
+	num[2] = (value_int / 10) % 10;
+ 2c0:	ea e0       	ldi	r30, 0x0A	; 10
+ 2c2:	f0 e0       	ldi	r31, 0x00	; 0
+ 2c4:	90 e0       	ldi	r25, 0x00	; 0
+ 2c6:	bf 01       	movw	r22, r30
+ 2c8:	62 d0       	rcall	.+196    	; 0x38e <__divmodhi4>
+ 2ca:	8c 01       	movw	r16, r24
+ 2cc:	cb 01       	movw	r24, r22
+ 2ce:	bf 01       	movw	r22, r30
+ 2d0:	5e d0       	rcall	.+188    	; 0x38e <__divmodhi4>
+ 2d2:	9e 8b       	std	Y+22, r25	; 0x16
+ 2d4:	8d 8b       	std	Y+21, r24	; 0x15
+	num[1] = value_int % 10;
+ 2d6:	1c 8b       	std	Y+20, r17	; 0x14
+ 2d8:	0b 8b       	std	Y+19, r16	; 0x13
+	num[0] = ((value_deci & 0x80) == 0x80) ? 5 : 0;
+ 2da:	c9 01       	movw	r24, r18
+ 2dc:	80 78       	andi	r24, 0x80	; 128
+ 2de:	99 27       	eor	r25, r25
+ 2e0:	27 ff       	sbrs	r18, 7
+ 2e2:	02 c0       	rjmp	.+4      	; 0x2e8 <_Z11display_FNDi+0x88>
+ 2e4:	85 e0       	ldi	r24, 0x05	; 5
+ 2e6:	90 e0       	ldi	r25, 0x00	; 0
+ 2e8:	9a 8b       	std	Y+18, r25	; 0x12
+ 2ea:	89 8b       	std	Y+17, r24	; 0x11
+ 2ec:	ae 01       	movw	r20, r28
+ 2ee:	4f 5e       	subi	r20, 0xEF	; 239
+ 2f0:	5f 4f       	sbci	r21, 0xFF	; 255
+ 2f2:	de 01       	movw	r26, r28
+ 2f4:	1d 96       	adiw	r26, 0x0d	; 13
+ 2f6:	80 e0       	ldi	r24, 0x00	; 0
+ 2f8:	90 e0       	ldi	r25, 0x00	; 0
+	for(i=0; i<4; i++)
+	{
+		PORTC = digit[num[i]];
+		PORTG = fnd_sel[i];
+ 2fa:	05 e6       	ldi	r16, 0x65	; 101
+ 2fc:	10 e0       	ldi	r17, 0x00	; 0
+ 2fe:	01 c0       	rjmp	.+2      	; 0x302 <_Z11display_FNDi+0xa2>
+ 300:	c9 01       	movw	r24, r18
+	num[2] = (value_int / 10) % 10;
+	num[1] = value_int % 10;
+	num[0] = ((value_deci & 0x80) == 0x80) ? 5 : 0;
+	for(i=0; i<4; i++)
+	{
+		PORTC = digit[num[i]];
+ 302:	fa 01       	movw	r30, r20
+ 304:	61 91       	ld	r22, Z+
+ 306:	71 91       	ld	r23, Z+
+ 308:	af 01       	movw	r20, r30
+ 30a:	e1 e0       	ldi	r30, 0x01	; 1
+ 30c:	f0 e0       	ldi	r31, 0x00	; 0
+ 30e:	ec 0f       	add	r30, r28
+ 310:	fd 1f       	adc	r31, r29
+ 312:	e6 0f       	add	r30, r22
+ 314:	f7 1f       	adc	r31, r23
+ 316:	20 81       	ld	r18, Z
+ 318:	25 bb       	out	0x15, r18	; 21
+		PORTG = fnd_sel[i];
+ 31a:	6d 91       	ld	r22, X+
+ 31c:	9c 01       	movw	r18, r24
+ 31e:	2f 5f       	subi	r18, 0xFF	; 255
+ 320:	3f 4f       	sbci	r19, 0xFF	; 255
+ 322:	f8 01       	movw	r30, r16
+ 324:	60 83       	st	Z, r22
+		if(i==1)
+ 326:	01 97       	sbiw	r24, 0x01	; 1
+ 328:	41 f4       	brne	.+16     	; 0x33a <_Z11display_FNDi+0xda>
+		PORTC |= 0x80;
+ 32a:	af 9a       	sbi	0x15, 7	; 21
 	#else
 		//round up by default
 		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
 	#endif
 
 	__builtin_avr_delay_cycles(__ticks_dc);
-  a4:	2f ef       	ldi	r18, 0xFF	; 255
-  a6:	31 ee       	ldi	r19, 0xE1	; 225
-  a8:	94 e0       	ldi	r25, 0x04	; 4
-  aa:	21 50       	subi	r18, 0x01	; 1
-  ac:	30 40       	sbci	r19, 0x00	; 0
-  ae:	90 40       	sbci	r25, 0x00	; 0
-  b0:	e1 f7       	brne	.-8      	; 0xaa <main+0xc>
-  b2:	00 c0       	rjmp	.+0      	; 0xb4 <main+0x16>
-  b4:	00 00       	nop
-		_delay_ms(100);
-		PORTA = 0x00;
-  b6:	1b ba       	out	0x1b, r1	; 27
-  b8:	2f ef       	ldi	r18, 0xFF	; 255
-  ba:	31 ee       	ldi	r19, 0xE1	; 225
-  bc:	94 e0       	ldi	r25, 0x04	; 4
-  be:	21 50       	subi	r18, 0x01	; 1
-  c0:	30 40       	sbci	r19, 0x00	; 0
-  c2:	90 40       	sbci	r25, 0x00	; 0
-  c4:	e1 f7       	brne	.-8      	; 0xbe <main+0x20>
-  c6:	00 c0       	rjmp	.+0      	; 0xc8 <main+0x2a>
-  c8:	00 00       	nop
-  ca:	eb cf       	rjmp	.-42     	; 0xa2 <main+0x4>
+ 32c:	8f e3       	ldi	r24, 0x3F	; 63
+ 32e:	9f e1       	ldi	r25, 0x1F	; 31
+ 330:	01 97       	sbiw	r24, 0x01	; 1
+ 332:	f1 f7       	brne	.-4      	; 0x330 <_Z11display_FNDi+0xd0>
+ 334:	00 c0       	rjmp	.+0      	; 0x336 <_Z11display_FNDi+0xd6>
+ 336:	00 00       	nop
+ 338:	e3 cf       	rjmp	.-58     	; 0x300 <_Z11display_FNDi+0xa0>
+ 33a:	ef e3       	ldi	r30, 0x3F	; 63
+ 33c:	ff e1       	ldi	r31, 0x1F	; 31
+ 33e:	31 97       	sbiw	r30, 0x01	; 1
+ 340:	f1 f7       	brne	.-4      	; 0x33e <_Z11display_FNDi+0xde>
+ 342:	00 c0       	rjmp	.+0      	; 0x344 <_Z11display_FNDi+0xe4>
+ 344:	00 00       	nop
+	value_int = (char)((value & 0x7f00) >> 8);
+	value_deci = (char)(value & 0x00ff);
+	num[2] = (value_int / 10) % 10;
+	num[1] = value_int % 10;
+	num[0] = ((value_deci & 0x80) == 0x80) ? 5 : 0;
+	for(i=0; i<4; i++)
+ 346:	24 30       	cpi	r18, 0x04	; 4
+ 348:	31 05       	cpc	r19, r1
+ 34a:	d4 f2       	brlt	.-76     	; 0x300 <_Z11display_FNDi+0xa0>
+		PORTG = fnd_sel[i];
+		if(i==1)
+		PORTC |= 0x80;
+		_delay_ms(2);
+	}
+ 34c:	68 96       	adiw	r28, 0x18	; 24
+ 34e:	0f b6       	in	r0, 0x3f	; 63
+ 350:	f8 94       	cli
+ 352:	de bf       	out	0x3e, r29	; 62
+ 354:	0f be       	out	0x3f, r0	; 63
+ 356:	cd bf       	out	0x3d, r28	; 61
+ 358:	df 91       	pop	r29
+ 35a:	cf 91       	pop	r28
+ 35c:	1f 91       	pop	r17
+ 35e:	0f 91       	pop	r16
+ 360:	08 95       	ret
 
-000000cc <_exit>:
-  cc:	f8 94       	cli
+00000362 <main>:
+int read_twi_2byte_nopreset(char reg);
+void display_FND(int value);
+int main()
+{
+	int	temperature;
+	init_twi_port();		// TWI 및 포트 초기화
+ 362:	aa de       	rcall	.-684    	; 0xb8 <_Z13init_twi_portv>
+	write_twi_1byte_nopreset(ATS75_CONFIG_REG, 0x00); // 9비트, Normal
+ 364:	60 e0       	ldi	r22, 0x00	; 0
+ 366:	81 e0       	ldi	r24, 0x01	; 1
+ 368:	ba de       	rcall	.-652    	; 0xde <_Z24write_twi_1byte_nopresetcc>
+void init_twi_port();
+void write_twi_1byte_nopreset(char reg, char data);
+int read_twi_2byte_nopreset(char reg);
+void display_FND(int value);
+int main()
+{
+ 36a:	c1 e0       	ldi	r28, 0x01	; 1
+ 36c:	d0 e0       	ldi	r29, 0x00	; 0
+ 36e:	01 c0       	rjmp	.+2      	; 0x372 <main+0x10>
+ 370:	21 96       	adiw	r28, 0x01	; 1
+	write_twi_1byte_nopreset(ATS75_CONFIG_REG, 0x00); // 9비트, Normal
+	while (1) 			// 온도값 읽어 FND 디스플레이
+	{
+		for (int i=0; i<30; i++)
+		{
+			if (i == 0)		// 억세스시간(300ms) 동안 기다리기 위하여
+ 372:	c1 30       	cpi	r28, 0x01	; 1
+ 374:	d1 05       	cpc	r29, r1
+			// 30번에 1번만 실제로 억세스함
+			temperature = read_twi_2byte_nopreset(ATS75_TEMP_REG);
+ 376:	29 f4       	brne	.+10     	; 0x382 <main+0x20>
+ 378:	80 e0       	ldi	r24, 0x00	; 0
+ 37a:	f9 de       	rcall	.-526    	; 0x16e <_Z23read_twi_2byte_nopresetc>
+			display_FND(temperature); 	// 1번 디스플레이에 약 10ms 소요
+ 37c:	8c 01       	movw	r16, r24
+ 37e:	70 df       	rcall	.-288    	; 0x260 <_Z11display_FNDi>
+ 380:	f7 cf       	rjmp	.-18     	; 0x370 <main+0xe>
+ 382:	c8 01       	movw	r24, r16
+ 384:	6d df       	rcall	.-294    	; 0x260 <_Z11display_FNDi>
+	int	temperature;
+	init_twi_port();		// TWI 및 포트 초기화
+	write_twi_1byte_nopreset(ATS75_CONFIG_REG, 0x00); // 9비트, Normal
+	while (1) 			// 온도값 읽어 FND 디스플레이
+	{
+		for (int i=0; i<30; i++)
+ 386:	ce 31       	cpi	r28, 0x1E	; 30
+ 388:	d1 05       	cpc	r29, r1
+ 38a:	7c f7       	brge	.-34     	; 0x36a <main+0x8>
+ 38c:	f1 cf       	rjmp	.-30     	; 0x370 <main+0xe>
 
-000000ce <__stop_program>:
-  ce:	ff cf       	rjmp	.-2      	; 0xce <__stop_program>
+0000038e <__divmodhi4>:
+ 38e:	97 fb       	bst	r25, 7
+ 390:	07 2e       	mov	r0, r23
+ 392:	16 f4       	brtc	.+4      	; 0x398 <__divmodhi4+0xa>
+ 394:	00 94       	com	r0
+ 396:	06 d0       	rcall	.+12     	; 0x3a4 <__divmodhi4_neg1>
+ 398:	77 fd       	sbrc	r23, 7
+ 39a:	08 d0       	rcall	.+16     	; 0x3ac <__divmodhi4_neg2>
+ 39c:	0b d0       	rcall	.+22     	; 0x3b4 <__udivmodhi4>
+ 39e:	07 fc       	sbrc	r0, 7
+ 3a0:	05 d0       	rcall	.+10     	; 0x3ac <__divmodhi4_neg2>
+ 3a2:	3e f4       	brtc	.+14     	; 0x3b2 <__divmodhi4_exit>
+
+000003a4 <__divmodhi4_neg1>:
+ 3a4:	90 95       	com	r25
+ 3a6:	81 95       	neg	r24
+ 3a8:	9f 4f       	sbci	r25, 0xFF	; 255
+ 3aa:	08 95       	ret
+
+000003ac <__divmodhi4_neg2>:
+ 3ac:	70 95       	com	r23
+ 3ae:	61 95       	neg	r22
+ 3b0:	7f 4f       	sbci	r23, 0xFF	; 255
+
+000003b2 <__divmodhi4_exit>:
+ 3b2:	08 95       	ret
+
+000003b4 <__udivmodhi4>:
+ 3b4:	aa 1b       	sub	r26, r26
+ 3b6:	bb 1b       	sub	r27, r27
+ 3b8:	51 e1       	ldi	r21, 0x11	; 17
+ 3ba:	07 c0       	rjmp	.+14     	; 0x3ca <__udivmodhi4_ep>
+
+000003bc <__udivmodhi4_loop>:
+ 3bc:	aa 1f       	adc	r26, r26
+ 3be:	bb 1f       	adc	r27, r27
+ 3c0:	a6 17       	cp	r26, r22
+ 3c2:	b7 07       	cpc	r27, r23
+ 3c4:	10 f0       	brcs	.+4      	; 0x3ca <__udivmodhi4_ep>
+ 3c6:	a6 1b       	sub	r26, r22
+ 3c8:	b7 0b       	sbc	r27, r23
+
+000003ca <__udivmodhi4_ep>:
+ 3ca:	88 1f       	adc	r24, r24
+ 3cc:	99 1f       	adc	r25, r25
+ 3ce:	5a 95       	dec	r21
+ 3d0:	a9 f7       	brne	.-22     	; 0x3bc <__udivmodhi4_loop>
+ 3d2:	80 95       	com	r24
+ 3d4:	90 95       	com	r25
+ 3d6:	bc 01       	movw	r22, r24
+ 3d8:	cd 01       	movw	r24, r26
+ 3da:	08 95       	ret
+
+000003dc <_exit>:
+ 3dc:	f8 94       	cli
+
+000003de <__stop_program>:
+ 3de:	ff cf       	rjmp	.-2      	; 0x3de <__stop_program>
