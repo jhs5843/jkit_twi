@@ -1,18 +1,16 @@
-/*
- * jkit_twi.cpp
- *
- * Created: 2018-11-07 오전 9:29:01
- * Author : USER
- */ 
-
 #include <avr/io.h>
-
+#define F_CPU 16000000UL
+#include <util/delay.h>
 
 int main(void)
 {
-    /* Replace with your application code */
+	DDRA = 0xff;
     while (1) 
     {
+		PORTA = 0xff;
+		_delay_ms(100);
+		PORTA = 0x00;
+		_delay_ms(100);
     }
 }
 
